@@ -26,3 +26,64 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/*solution*/
+body {
+  display:flex;
+  flex-direction:column;
+}
+
+.header {
+  display: flex;
+  justify-content: left;
+  align-items:center;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+}
+
+.content {
+  flex:1;
+  display:flex;
+}
+
+.sidebar{
+  width:300px;
+  flex-shrink:0;
+  
+}
+
+a{
+  text-decoration:none;
+  color:white;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+  list-style-type: none;
+  padding:0px;
+}
+
+.sidebar li {
+  padding: 16px;
+}
+
+.cardcontainer{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  padding:32px;
+  gap:16px;
+}
+
+.card{
+  width:300px;
+  padding:16px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
